@@ -14,6 +14,10 @@ public class Autogidas {
             throw new PavadinimoFormatasException("Pavadinimas per iklgas");
         }else{
             automobiliai.add(automobilis);
+
+            automobiliai.add(automobilis);
+
+
         }
 
         if(automobilis.getMarke().equals("Opel"))
