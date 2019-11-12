@@ -4,6 +4,13 @@ public class Automobilis {
     private String modelis;
     private double kaina;
 
+
+
+
+
+
+
+
     public Automobilis(String marke, String modelis, double kaina) {
         this.marke = marke;
         this.modelis = modelis;

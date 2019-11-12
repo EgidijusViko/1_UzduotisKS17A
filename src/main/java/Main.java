@@ -18,11 +18,12 @@ public class Main {
 
 
         for (int i = 0; i <10 ; i++) {
+
             try {
                 autogidas.ideti(new BMW(pavadinimai[new Random().nextInt(pavadinimai.length)], "X5", 500 + i));
             } catch (PavadinimoFormatasException e) {
 
-                System.out.println("Skelbimas neįdetas nes pavadinimas perilgas!!!");
+                System.out.println("Skelbimas neįdetas nes pavadinimas perilgas !!!");
                 //e.printStackTrace();
             }
 
@@ -39,10 +40,10 @@ for (Automobilis p: autogidas.getAutomobiliai()){
     System.out.println("Automobilis "+p.getMarke()+" Modelis "+p.getModelis()+" Kaina: "+p.getKaina());
 
 
+
+
+
 }
-
-
-
 
 
 

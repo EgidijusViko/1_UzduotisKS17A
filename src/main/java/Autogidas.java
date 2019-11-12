@@ -5,26 +5,29 @@ public class Autogidas {
 
     private String pavadinimas;
     private String miestas;
-    private List<Automobilis> automobiliai= new ArrayList<>();
+    private List<Automobilis> automobiliai = new ArrayList<>();
 
 
 
-    public void ideti(Automobilis automobilis) throws PavadinimoFormatasException, MarkeNeleistina{
-        if (automobilis.getMarke().length() > 15){
-            throw new PavadinimoFormatasException("Pavadinimas per iklgas");
-        }else{
-            automobiliai.add(automobilis);
 
-            automobiliai.add(automobilis);
+
+
+    public void ideti(Automobilis automobilis) throws PavadinimoFormatasException {
+        if (automobilis.getMarke().length() > 15) {
+            throw new PavadinimoFormatasException("Pavadinimas per ilgas");
+
+
+        } else {
+
+                automobiliai.add(automobilis);
+
+
+            }
 
 
         }
 
-        if(automobilis.getMarke().equals("Opel"))
-            throw new MarkeNeleistina("");
 
-
-    }
 
     public String getPavadinimas() {
         return pavadinimas;
