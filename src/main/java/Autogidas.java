@@ -12,10 +12,14 @@ public class Autogidas {
 
 
 
-    public void ideti(Automobilis automobilis) throws PavadinimoFormatasException {
+    public void ideti(Automobilis automobilis) throws PavadinimoFormatasException,MarkeNeleistina {
         if (automobilis.getMarke().length() > 15) {
             throw new PavadinimoFormatasException("Pavadinimas per ilgas");
 
+
+        } else if(automobilis.getMarke() == "Opel"){
+
+            throw new MarkeNeleistina("Neleistina marke");
 
         } else {
 
@@ -26,6 +30,9 @@ public class Autogidas {
 
 
         }
+
+
+
 
 
 

@@ -12,22 +12,35 @@ public class Main {
                 "BMW x5",
                 "Opel5555555555555555555555555hhhhhhhhhhhhhhhh",
                 "Opel Vectra",
-                "Audi A3 "
-
+                "Audi A3 ",
+                "Opel"
         };
 
 
         for (int i = 0; i <10 ; i++) {
 
             try {
-                autogidas.ideti(new BMW(pavadinimai[new Random().nextInt(pavadinimai.length)], "X5", 500 + i));
-            } catch (PavadinimoFormatasException e) {
 
-                System.out.println("Skelbimas neįdetas nes pavadinimas perilgas !!!");
-                //e.printStackTrace();
+                try {
+                    autogidas.ideti(new BMW(pavadinimai[new Random().nextInt(pavadinimai.length)], "X5", 500 + i));
+                } catch (PavadinimoFormatasException e) {
+
+                    System.out.println("Skelbimas neįdetas nes pavadinimas perilgas !!!");
+                    //e.printStackTrace();
+                }
+            }catch (MarkeNeleistina e) {
+                System.out.println("Neleistina marke");
+
             }
-
         }
+
+
+
+
+
+
+       
+
 
 
 

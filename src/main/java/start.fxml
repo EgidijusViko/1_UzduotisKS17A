@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="Panele" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <TextField fx:id="pavadinimas" layoutX="401.0" layoutY="74.0" />
+      <TextField fx:id="Marke" layoutX="401.0" layoutY="117.0" />
+      <TextField fx:id="modelis" layoutX="401.0" layoutY="161.0" />
+      <TextField fx:id="kaina" layoutX="401.0" layoutY="212.0" />
+      <Button layoutX="428.0" layoutY="258.0" mnemonicParsing="false" onAction="#Ideti" text="        Ideti         " />
+      <ListView fx:id="automobiliu_sarasas" layoutX="45.0" layoutY="29.0" prefHeight="298.0" prefWidth="318.0" />
+   </children>
+</AnchorPane>
